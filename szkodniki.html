@@ -1,0 +1,427 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Choroby i szkodniki - tablice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta name="author" content="Ania Kręglewska">
+<meta name="author" content="Pawełek Postupalski">
+<meta name="author" content="Rafał Pitera">
+<!--Na podstawie kursu JavaScript autorstwa Ani Kręglewskiej & Pawła Postupalskiego, (c) 2000 -->
+<BR><BR>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+<!--Widzę szkodniki na ro¶linie-->
+<!--
+
+function zielone() {
+	if( confirm('Czy na lisciach sa zielone owady?')) { alert('Mszyce!'); }
+	else { tarczki(); }}
+
+function tarczki() {
+	if(confirm('Czy na lisciach sa brazowe tarczki?')) { alert('Tarczniki!'); }
+	else { BialeMuszki();}}
+
+function BialeMuszki() {
+	if(confirm('Czy przy poruszeniu lisci widać białe muszki?')) { alert('Maczliki!'); }
+	else { wciorki();}}
+
+function wciorki() {
+	if(confirm('Czy na lisciach sa srebrzyste plamki, a po strzasnięciu lisci nad kartka papiery widać brazowe owady i ich kremowe, bezskrzydłe larwy?')) { alert('Wciornastki!'); }
+	else { paj();}}
+
+function paj() {
+	if(confirm('Czy na spodzie lisci jest pajęczynka, po której chodza maleńkie, czerwone pajaczki?')) { alert('Przędziorki!'); }
+	else { wata();}}
+
+function wata() {
+	if(confirm('Czy na roslinie widać kłaczki waty?')) { alert('Wełnowce!'); }
+	else { muszki();}}
+
+function muszki() {
+	if(confirm('Czy po komposcie lub po roslinach skacza małe, czarne muszki?')) { alert('Ziemiórki!'); }
+	else { larwyZiemiorek();}}
+
+function larwyZiemiorek() {
+	if(confirm('Czy po podłożu chodza połprzezroczyste latwy z czarna głowa?')) { alert('Larwy ziemiórek!'); }
+	else { larwyOpuchlaka();}}
+
+function larwyOpuchlaka() {
+	if(confirm('Czy larwy bardziej przypominaja larwy chrabaszcza?')) { alert('Larwy opuchlaka!'); }
+	else { opuchlak();}}
+
+function opuchlak() {
+	if(confirm('Po roslinie, zwłaszcza noca chodza małe, szaroczarne chrzaszcze?')) { alert('Opuchlak!'); }
+	else { slimaki();}}
+
+function slimaki() {
+	if(confirm('Czy wokół roslin widać slady sluzu, a liscie sa powygryzane?')) { alert('slimaki!'); }
+	else { roztocza();}}
+
+function roztocza() {
+	if(confirm('Czy liscie sa zniekształcone i skędzieżawione, a po użyciu lupy widać malutkie, białawe pajaczki (ale na roslinie nie ma pajęczyny)?')) { alert('Roztocza!'); }
+	else { koniec();}}
+//-->
+
+<!--Widzę szkodniki w ziemi-->
+<!--
+function ziemia() {
+	if(confirm('Czy po podłożu chodza połprzezroczyste latwy z czarna głowa?')) { alert('Larwy ziemiórek!'); }
+	else { larwyopuch();}}
+
+function larwyopuch() {
+	if(confirm('Czy larwy bardrdziej przypominaja larwy chrabaszcza?')) { alert('Larwy opuchlaka!'); }
+	else { mszykorz();}}
+
+function mszykorz() {
+	if(confirm('Czy po wyjęciu bryły korzeniowej z doniczki widać pomiędzy korzeniami małe, białe organizmy?')) { alert('Mszyce korzeniowe!'); }
+	else { rozkruszek();}}
+
+function rozkruszek() {
+	if(confirm('Czy w ziemi sa małe, błyszczace, gruszkowate organizmy?')) { alert('Rozkruszek korzeniowy!'); }
+	else { skoczogonki();}}
+
+function skoczogonki() {
+	if(confirm('Czy podczas podlewania od góry po ziemi skacza małe, białe owady?')) { alert('Skoczogonki!'); }
+	else { koniec();}}
+//-->
+
+<!--Uszkodzenia lisci-->
+<!--
+function uszkodzenialisci() {
+	if(confirm('Czy liscie dzbanecznika nie tworza dzbanków, a te, które były, zasychaja?')) { alert('Zbyt mała wilgotnosć otoczenia!'); }
+	else { gnijlisc();}}
+
+function gnijlisc() {
+	if(confirm('Czy liscie muchołówki gnija zanim się rozwina?')) { alert('Zbyt mała ilosć słońca, zbyt mała temperatura latem, zbyt wysoka zima, brak okresu spoczynku, za mała wilgotnosć, zastałe powietrze!'); }
+	else { gnijof();}}
+
+function gnijof() {
+	if(confirm('Czy u muchołówki gnija liscie, które złapały owada?')) { alert('Zbyt duży owad lub jakas jego częsć wystaje poza pułapkę!'); }
+	else { susza();}}
+
+function susza() {
+	if(confirm('Czy nowe, rozwijajace się liscie sa popękane i maja suche, pokruszone brzegi?')) { alert('Zbyt niska wilgotnosc!'); }
+	else { zerzat();}}
+
+function zerzat() {
+	if(confirm('Czy brzegi lisci sa wygryzione półkoliscie?')) { alert('Opuchlak!'); }
+	else { slimol();}}
+
+function slimol() {
+	if(confirm('Czy dziury w lisciach sa nieregularne, a wokół rosliny widać slady sluzu?')) { alert('slimaki!'); }
+	else { gaski();}}
+
+function gaski() {
+	if(confirm('Czy dziury w lisciach sa nieregularne, a wokół rosliny widać czarne grudki odchodów?')) { alert('Gasienice!'); }
+	else { pluski();}}
+
+function pluski() {
+	if(confirm('Czy w lisciach sa dziury na wylot, a na dodatek liscie sa zniekształcone?')) { alert('Pluskwiaki!'); }
+	else { mszyse();}}
+
+function mszyse() {
+	if(confirm('Czy liscie sa skędzieżawione, lepkie i znajduja się na nich zielone owady lub białe puste wylinki?')) { alert('Mszyce!'); }
+	else { roztki();}}
+
+function roztki() {
+	if(confirm('Czy liscie sa skędzieżawione, zniekształcone lub/i w plamki?')) { alert('Roztocza!'); }
+	else { wcior();}}
+
+function wcior() {
+	if(confirm('Czy na lisciach sa srebrzyste plamki, a po strzasnięciu lisci nad kartka papiery widać brazowe owady i ich kremowe, bezskrzydłe larwy?')) { alert('Wciornastki!'); }
+	else { miniarki();}}
+
+function miniarki() {
+	if(confirm('Czy pod górna powierzchnia lisci widać żółtobiałe chodniki?')) { alert('Miniarki!'); }
+	else { koniec();}}
+
+//-->
+
+
+<!--Przebarwienia i plamy na lisciach-->
+<!--
+function przebarwienia() {
+	if(confirm('Czy brzegi i końce lisci sa suche, dzbanecznik nie tworzy dzbanków?')) { alert('Zbyt mała wilgotnosć otoczenia!'); }
+	else { potas();}}
+
+function potas() {
+	if(confirm('Czy brzegi i końce lisci brunatnieja, a następnie zwijaja się, roslina więdnie?')) { alert('Niedobór potasu, lub, co bardziej prawdopodobne, niska wilgotnosc.!'); }
+	else { wiroza();}}
+
+function wiroza() {
+	if(confirm('Czy na lisciach pojawiaja się mozaikowate, żółte plamy?')) { alert('Wiroza - choroba wirusowa!'); }
+	else { fizjo();}}
+
+function fizjo() {
+	if(confirm('Czy żółkna pojednyncze, głównie starsze liscie?')) { alert('Sytuacja naturalna. Jesli jednak lisćie żółkna szybko lub w dużej ilosci może to oznaczać chorobę, szkodniki lub zaniedbanie!'); }
+	else { zelazo();}}
+
+function zelazo() {
+	if(confirm('Czy młode liscie sa żółte, ale maja zielone żyłki?')) { alert('Niedobór żelaza!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+//-->
+
+<!--Nalot na lisciach-->
+<!--
+function puder() {
+	if(confirm('Czy na lisciach jest biały, pudrowy nalot?')) { puder1(); }
+	else { rdza();}}
+
+function puder1() {
+	if(confirm('Czy nalot jest na wierzchniej stronie lisći?')) { alert('Maczniak prawdzowy!'); }
+	else { puder2();}}
+
+function puder2() {
+	if(confirm('Czy nalot jest na spodniej stronie lisci?')) { alert('Maczniak rzekomy!'); }
+	else { koniec();}}
+
+function rdza() {
+	if(confirm('Czy nalot jest rdzawy i pylacy?')) { alert('Rdza!'); }
+	else { szary();}}
+
+function szary() {
+	if(confirm('Czy nalot jest szary i pylacy?')) { alert('Szara plesń!'); }
+	else { motek();}}
+
+function motek() {
+	if(confirm('Czy nalot jest biały i przypomina watę?')) { alert('Wełnowce!'); }
+	else { czerwcze();}}
+
+function czerwcze() {
+	if(confirm('Czy na lisciach sa małe żółtobrazowe tarczki?')) { alert('Czerwce!'); }
+	else { sadza();}}
+
+function sadza() {
+	if(confirm('Czy nalot jest czarny i lepki?')) { alert('Grzyby sadzaki!'); }
+	else { rosa();}}
+
+function rosa() {
+	if(confirm('Czy liscie sa lepkie?')) { saracenia(); }
+	else { szkod();}}
+
+function szkod() {
+	if(confirm('Czy widać jakies owady?')) { zielone(); }
+	else { koniec();}}
+//-->
+
+<!--Inne niepokojace objawy zwiazane z liscmi-->
+<!--
+function saracenia() {
+	if(confirm('Czy górna częsć dzbanuszków saraceni jest lepka?')) { alert('To normalne - górna częsć dzbanuszka sarraceni produkuje nektar wabiacy owady. Trzeba tylko uważać, aby nie rozwinęły się grzyby sadzaki'); }
+	else { szkod();}}
+
+//-->
+
+<!--Uszkodzenia kwiatów-->
+<!--
+function rozt() {
+	if(confirm('Czy płatki kwiatów sa skędzieżawione, zniekształcone lub/i w plamki?')) { alert('Roztocza!'); }
+	else { mszyce();}}
+
+function mszyce() {
+	if(confirm('Czy płatki kwiatów sa skędzieżawione, lepkie i znajduja się na nich zielone owady lub białe puste wylinki?')) { alert('Mszyce!'); }
+	else { pluskwiaki();}}
+
+function pluskwiaki() {
+	if(confirm('Czy płatki kwiatów sa niedorozwinięte i poprzedziurawiane?')) { alert('Puskwiaki!'); }
+	else { maczniaki();}}
+
+function maczniaki() {
+	if(confirm('Czy na płatkach jest biały, pudrowy nalot?')) { alert('Maczniak prawdziwy lub rzekomy!'); }
+	else { opadaja();}}
+
+function opadaja() {
+	if(confirm('Czy kwiaty opadły?')) { alert('Przyczyny moga być bardzo różne: przestawienie roslin, przesuszenie, niedostateczna ilosć swiatła, nagła zmiana temperatury, podlanie zbyt zimna woda, przeciagi!'); }
+	else { koniec();}}
+
+
+//-->
+
+<!--Zmiany na pędach i korzeniach-->
+<!--
+function korzenie() {
+	if(confirm('Czy korzenie sa brunatne, a ziemia mokra, o nieprzyjemnym zapacgu?')) { alert('Zalanie korzeni!'); }
+	else { zgnile();}}
+
+function zgnile() {
+	if(confirm('Czy korzenie sa brunatne i zgniłe, a zewnętrzna skórka daje się sciagnać?')) { alert('Zgnilizna korzeni!'); }
+	else { mszykory();}}
+
+function mszykory() {
+	if(confirm('Czy po wyjęciu bryły korzeniowej z doniczki widać pomiędzy korzeniami małe, białe organizmy?')) { alert('Mszyce korzeniowe!'); }
+	else { welenka();}}
+
+function welenka() {
+	if(confirm('Czy na pędach sa brunatne tarczki?')) { alert('Czerwce!'); }
+	else { kalafior();}}
+
+function kalafior() {
+	if(confirm('Czy na korzeniach i na podstawie pędu sa kalafiorowate narosla lub zgrubienia?')) { alert('Bakteriozy!'); }
+	else { nici();}}
+
+function nici() {
+	if(confirm('Czy na korzeniach sa cytrynowate lub kuliste guzki wielkosci główki od szpilki?')) { alert('Nicienie korzeniowe!'); }
+	else { koniec();}}
+
+
+//-->
+
+<!--Porażenie całej rosliny-->
+<!--
+function cala() {
+	if(confirm('Czy nagle obumiera cała roslina, a w podłożu znajduj± się grube, białawe larwy?')) { alert('Opuchlak!'); }
+	else { zalanie();}}
+
+function zalanie() {
+	if(confirm('Czy więdnie cała roslina, jej korzenie s± brunatne a ziemia nieprzyjemnie pachnie?')) { alert('Zalanie wod±!'); }
+	else { brak();}}
+
+function brak() {
+	if(confirm('Czy roslina więdnie i usychaj± jej końce lisci?')) { alert('Przesuszenie!'); }
+	else { gnije();}}
+
+function gnije() {
+	if(confirm('Czy roslina więdnie, żółknie, obumiera, ale ziemia w doniczce ma odpowiednia wilgotnosć i normalny zapach?')) { alert('Zgnilizna korzeni i pędów - choroba grzybowa!'); }
+	else { sole();}}
+
+
+//-->
+
+<!--Niepokojace objawy zwiazane z ziemia-->
+<!--
+function sole() {
+	if(confirm('Czy na ziemi lub/oraz na doniczce (zwłaszcza glinianej) widać biały osad, który przybiera czasem wyglad małych kamyczków?')) { alert('Wykwity soli mineralnych i wapnia!'); }
+	else { zapach();}}
+
+function zapach() {
+	if(confirm('Czy ziemia ma nieprzyjemny zapach zgnilizny lub grzybów?')) { alert('Zalanie podłoża (gnija korzenie) lub grzyby w ziemi!'); }
+	else { slimak();}}
+
+function slimak() {
+	if(confirm('Czy na podłożu sa błyszczace slady sluzu?')) { alert('slimaki!'); }
+	else { watroba();}}
+
+function watroba() {
+	if(confirm('Czy podłoże porasta dziwna, płatowata roslina z "wgłębieniami"?')) { alert('Watrobowiec - szukaj w dziale "Inne rosliny"!'); }
+	else { mszyki();}}
+
+function mszyki() {
+	if(confirm('Czy po wyjęciu bryły korzeniowej z doniczki widać pomiędzy korzeniami małe, białe organizmy?')) { alert('Mszyce korzeniowe!'); }
+	else { rozkr();}}
+
+function rozkr() {
+	if(confirm('Czy w ziemi sa małe, błyszczace, gruszkowate organizmy?')) { alert('Rozkruszek korzeniowy!'); }
+	else { koniec();}}
+//-->
+
+<!--Końcówki-->
+<!--
+function dalejniema() {
+	{ alert('Dalej jeszcze nie zrobiłem!'); }}
+
+function koniec() {
+	{ alert('Przyjrzyj się jeszcze raz podejrzanym roslinom i spróbuj odpowiedzieć na pytania ponownie, nacisnij na inny przycisk lub wyslij do mnie emaila z dokładnym opisem objawów i warunków w jakich hodowana jest roslina!')}}
+//-->
+
+</SCRIPT>
+
+
+</head>
+
+<style type="text/css">
+<!--
+H1 {font-size: 25pt; color: #FF0000; font-family: Arial}
+H2 {font-size: 20pt; color: #0000FF; font-family: DFN Decorator}
+B {font-size: 10pt; color: #FF7F00; font-family: Arial, Helvetica}
+BODY {margin-left: 0.5cm; margin-right: 1cm; background: White; font-size: 10pt; color: Black; font-family: Arial, Helvetica }
+A { text-decoration: none; color: #bd00a0}
+TD {font-family: Arial, Helvetica; font-size: 10pt; color: #FF0000 }
+HR {color: #8E236B; height: 1mm}
+-->
+</style>
+
+<BODY>
+
+<SCRIPT language="JavaScript">
+<!--
+if(top == self){
+document.write('<SCRIPT language="JavaScript" src="menu.js"></SCRIPT><BR>')
+}
+//-->
+</SCRIPT>
+
+<form name="formularz" action="" method="">
+<CENTER>
+<input type="button" value="Widzę szkodniki na roslinie" onClick="zielone();"><BR><BR>
+<input type="button" value="Widzę szkodniki w ziemi" onClick="ziemia();"><BR><BR>
+<input type="button" value="Uszkodzenia lisci" onClick="uszkodzenialisci();"><BR><BR>
+<input type="button" value="Przebarwienia i plamy na lisciach" onClick="przebarwienia();"><BR><BR>
+<input type="button" value="Nalot na lisciach" onClick="puder();"><BR><BR>
+<input type="button" value="Inne niepokojace objawy zwiazane z liscmi" onClick="saracenia();"><BR><BR>
+<input type="button" value="Uszkodzenia kwiatów" onClick="rozt();"><BR><BR>
+<input type="button" value="Zmiany na pędach i korzeniach" onClick="korzenie();"><BR><BR>
+<input type="button" value="Porażenie całej rosliny" onClick="cala();"><BR><BR>
+<input type="button" value="Niepokojace objawy zwiazane z ziemia" onClick="sole();"><BR>
+</CENTER>
+</form>
+
+<NOFRAMES>
+<CENTER><A HREF="Spis tresci.html">Spis tresci</A></CENTER>
+</NOFRAMES>
+
+</body>
+</html>
+
+<!--
+function nazwa() {
+	if(confirm('Pytanie?')) { alert('To to!'); }
+	else { koniec();}}
+
+
+-->
